@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.michealyang</groupId>
@@ -9,9 +10,10 @@
     <packaging>pom</packaging>
 
     <modules>
-    <module>embedded-jetty</module>
-    <module>base-jar</module>
-  </modules>
+        <module>jetty-embedded</module>
+        <module>base-jar</module>
+        <module>code-repo</module>
+    </modules>
 
     <properties>
         <java8-version>1.8</java8-version>
@@ -194,34 +196,34 @@
 
                 <!--&lt;!&ndash;打包可执行jar包。方法一  Start&ndash;&gt;-->
                 <!--<plugin>-->
-                    <!--<groupId>org.apache.maven.plugins</groupId>-->
-                    <!--<artifactId>maven-jar-plugin</artifactId>-->
-                    <!--<version>2.6</version>-->
-                    <!--<configuration>-->
-                        <!--<archive>-->
-                            <!--<manifest>-->
-                                <!--<addClasspath>true</addClasspath>-->
-                                <!--<classpathPrefix>lib/</classpathPrefix>-->
-                            <!--</manifest>-->
-                        <!--</archive>-->
-                    <!--</configuration>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-jar-plugin</artifactId>-->
+                <!--<version>2.6</version>-->
+                <!--<configuration>-->
+                <!--<archive>-->
+                <!--<manifest>-->
+                <!--<addClasspath>true</addClasspath>-->
+                <!--<classpathPrefix>lib/</classpathPrefix>-->
+                <!--</manifest>-->
+                <!--</archive>-->
+                <!--</configuration>-->
                 <!--</plugin>-->
                 <!--<plugin>-->
-                    <!--<groupId>org.apache.maven.plugins</groupId>-->
-                    <!--<artifactId>maven-dependency-plugin</artifactId>-->
-                    <!--<version>2.10</version>-->
-                    <!--<executions>-->
-                        <!--<execution>-->
-                            <!--<id>copy-dependencies</id>-->
-                            <!--<phase>package</phase>-->
-                            <!--<goals>-->
-                                <!--<goal>copy-dependencies</goal>-->
-                            <!--</goals>-->
-                            <!--<configuration>-->
-                                <!--<outputDirectory>${project.build.directory}/lib</outputDirectory>-->
-                            <!--</configuration>-->
-                        <!--</execution>-->
-                    <!--</executions>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-dependency-plugin</artifactId>-->
+                <!--<version>2.10</version>-->
+                <!--<executions>-->
+                <!--<execution>-->
+                <!--<id>copy-dependencies</id>-->
+                <!--<phase>package</phase>-->
+                <!--<goals>-->
+                <!--<goal>copy-dependencies</goal>-->
+                <!--</goals>-->
+                <!--<configuration>-->
+                <!--<outputDirectory>${project.build.directory}/lib</outputDirectory>-->
+                <!--</configuration>-->
+                <!--</execution>-->
+                <!--</executions>-->
                 <!--</plugin>-->
                 <!--&lt;!&ndash;打包可执行jar包。方法一  End&ndash;&gt;-->
 
@@ -235,9 +237,9 @@
 
                 <!--&lt;!&ndash;打包可执行jar包。方法三 Start&ndash;&gt;-->
                 <!--<plugin>-->
-                    <!--<groupId>org.apache.maven.plugins</groupId>-->
-                    <!--<artifactId>maven-shade-plugin</artifactId>-->
-                    <!--<version>${maven.shade.plugin.version}</version>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-shade-plugin</artifactId>-->
+                <!--<version>${maven.shade.plugin.version}</version>-->
                 <!--</plugin>-->
                 <!--&lt;!&ndash;打包可执行jar包。方法三 End&ndash;&gt;-->
 

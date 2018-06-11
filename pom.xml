@@ -10,6 +10,7 @@
 
     <modules>
     <module>embedded-jetty</module>
+    <module>base-jar</module>
   </modules>
 
     <properties>

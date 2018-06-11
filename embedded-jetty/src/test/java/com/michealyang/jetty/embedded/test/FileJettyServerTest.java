@@ -1,4 +1,4 @@
-package com.michealyang;
+package com.michealyang.jetty.embedded.test;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

@@ -59,6 +59,7 @@
 
 
         <jetty.version>9.4.7.v20170914</jetty.version>
+        <javax.mail.version>1.4.7</javax.mail.version>
 
         <maven.assembly.plugin.version>2.6</maven.assembly.plugin.version>
         <maven.war.plugin.version>2.6</maven.war.plugin.version>
@@ -149,6 +150,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+            <dependency>
+                <groupId>javax.mail</groupId>
+                <artifactId>mail</artifactId>
+                <version>${javax.mail.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-server</artifactId>

@@ -1,4 +1,4 @@
-package com.michealyang.base.jar;
+package com.my.base.jar;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

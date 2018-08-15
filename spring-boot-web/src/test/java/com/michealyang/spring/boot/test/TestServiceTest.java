@@ -1,0 +1,10 @@
+package com.michealyang.spring.boot.test;
+
+/**
+ * @author michealyang
+ * @version 1.0
+ * @created 18/6/22
+ * 开始眼保健操： →_→  ↑_↑  ←_←  ↓_↓
+ */
+public class TestServiceTest extends TestBase{
+}

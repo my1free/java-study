@@ -13,6 +13,10 @@
     <name>base-jar</name>
     <url>http://maven.apache.org</url>
     <dependencies>
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -30,7 +34,7 @@
                             <archive>
                                 <manifest>
                                     <mainClass>
-                                        com.michealyang.base.jar.App
+                                        com.my.base.jar.App
                                     </mainClass>
                                 </manifest>
                             </archive>
